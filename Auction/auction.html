@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Auction</title>
+    <link href = "style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&display=swap" rel="stylesheet">
+    <link href="4258404.png" rel="shotcut icon">
+
+</head>
+<body>
+    
+<section class="header"> 
+
+    <a href="#" class="logo"> <image src ="4258404.png"> <i>"antique is anything old with class"</i> </image</a>
+     
+       <nav class="navbar">
+        <a href="../index.html">home</a>
+        <a href="../Account/account.html">Account</a>
+        <a href="../Product UI/Product.html">Products</a>
+        <a href="auction.html">Auction</a>
+        <a href="../Contact Form/inquiry.html">Inquiry</a>
+        </nav>
+     
+    <div id="menu-btn" class="fas fa-bars"></div>
+      
+</section>
+
+<!--ICEBOX MODAL-->
+<div id="iceboxModal" class="modal">
+    <div class="modal-content">
+      <span class="close">close &times;</span><br><br><br>
+      <div class="modal-header">
+        <h2>AUCTION BIDDING</h2>
+      </div>
+      <div class="modal-body">
+        <img src="11.jpg"> <br><br>
+        <div class="form-group">
+          <label>Bid Price</label>
+          <div class="input-group">
+ 
+            <button id="down" class="btn-default" onclick=" down(53100)"><i class="far fa-minus-square"></i></button>
+            <input type="text" id="myNumber" class="input-number" value="53,100">
+            <button id="up" class="btn-default" onclick="up(100000)"><i class="far fa-plus-square"></i></button>
+
+          </div>
+      </div>
+            <br><br>
+            <button class="bid btn" class="btn">Bid</button><br><br>
+            <h3>Highest Bidder Price is ₱ 53,000</h3> 
+            <div class="confirmation-show">
+            <h4 class="confirmation"><i class="fas fa-check-circle"></i>Your Bid Price Has been Placed</h4>
+            </div>
+        </div>
+      <div class="modal-footer">
+        <h3>Reminder: Check the Current Highest Bidding Price Before Bidding </h3>
+      </div>
+
+    </div>
+  
+  </div>
+
+<!--ROUND TABLE MODAL-->
+  <div id="tableModal" class="modal">
+    <!-- Modal content -->
+    <div class="modal-content">
+      <span class="close">close &times;</span><br><br><br>
+
+      <div class="modal-header">
+        <h2>AUCTION BIDDING</h2>
+      </div>
+      <div class="modal-body">
+        <img class="roundt" src="39.jpg"> <br><br>
+        <div class="form-group">
+          <label>Bid Price</label>
+          <div class="input-group">
+            <button id="minus" class="btn-default" onclick="minus(30000)"><i class="far fa-minus-square"></i></button>
+            <input type="text" id="number" class="input-number" value="30,000">
+            <button id="add" class="btn-default" onclick="add(100000)"><i class="far fa-plus-square"></i></button>
+
+          </div>
+      </div>
+            <br><br>
+            <button class="bid btn" class="btn">Bid</button><br><br>
+            <h3>Highest Bidder Price is ₱ 59,000</h3> 
+            <div class="confirmation-show">
+            <h4 class="confirmation"><i class="fas fa-check-circle"></i>Your Bid Price Has been Placed</h4>
+            </div>
+        </div>
+      <div class="modal-footer">
+        <h3>Reminder: Check the Minimum Bidding Price Before Bidding </h3>
+      </div>
+
+    </div>
+  
+  </div>
+
+
+
+    <section class="featured" id="featured">
+
+        <h1 class="heading"> <span>Auctioned</span> products </h1>
+        <h2 class="date">Time Left:  <span id="date"></span></h2>
+        <div class="row-container">
+        <div class="row">
+            <div class="image-container">
+                <div class="small-image">
+                    <img src="2.jpg" class="featured-image-1" alt="">
+                    <img src="8.jpg" class="featured-image-1" alt="">
+                    <img src="9.jpg" class="featured-image-1" alt="">
+                    <img src="10.jpg" class="featured-image-1" alt="">
+                    
+                </div>
+                <div class="big-image">
+                    <img src="11.jpg" class="big-image-1" alt="">
+                </div>
+            </div>
+            <div class="content">
+                <h3>Ice Boxes</h3>
+                <p>Antique Ice Boxes is made of Solid Narra Wood Since 1830's</p>
+                <div class="price">Minimum Bid Price</div>
+                <div class="price">40,000 </div>
+                <a class="btn" id="icebox">Join Bidding</a>
+            </div>
+        </div>
+        
+        <div class="row">
+            <div class="image-container">
+                <div class="small-image">
+                    <img src="38.jpg" class="featured-image-2" alt="">
+                    <img src="40.jpg" class="featured-image-2" alt="">
+                    <img src="41.jpg" class="featured-image-2" alt="">
+                    <img src="42.jpg" class="featured-image-2" alt="">
+                </div>
+                <div class="big-image">
+                    <img src="39.jpg" class="big-image-2" alt="">
+                </div>
+            </div>
+            <div class="content">
+                <h3>Round Pedestal Table</h3>
+    
+                <p> English Regency Round Table with Carved Center Pedestal, circa 1925</p>
+                <div class="price">Minimum Bid Price</div>
+                <div class="price">30,000 </div>
+                <a class="btn" id="table">Join Bidding</a>
+            </div>
+        </div>
+    
+        <div class="row">
+            <div class="image-container">
+                <div class="small-image">
+                    <img src="13.jpg" class="featured-image-3" alt="">
+                    <img src="14.jpg" class="featured-image-3" alt="">
+                    <img src="15.jpg" class="featured-image-3" alt="">
+                    <img src="16.jpg" class="featured-image-3" alt="">
+                </div>
+                <div class="big-image">
+                    <img src="32.jpg" class="big-image-3" alt="">
+                </div>
+            </div>
+            <div class="content">
+                <h3>Singer Stand</h3>
+    
+                <p>Made of Solid Iron (Pundido) 1950's</p>
+                <div class="price">Minimum Bid Price</div>
+                <div class="price">4,000</div>
+                <a class="btn" id="singer">Join Bidding</a>
+            </div>
+        </div>
+    
+            <div class="row">
+                <div class="image-container">
+                    <div class="small-image">
+                        <img src="17.jpg" class="featured-image-4" alt="">
+                        <img src="18.jpg" class="featured-image-4" alt="">
+                        <img src="20.jpg" class="featured-image-4" alt="">
+                        <img src="21.jpg" class="featured-image-4" alt="">
+                    </div>
+                    <div class="big-image">
+                        <img src="21.jpg" class="big-image-4" alt="">
+                    </div>
+                </div>
+    
+            <div class="content">
+                <h3>Coca-cola </h3>
+    
+                <p>COCA - COLA  McDONALD Bottle
+                    20the Anniversary, <br> We Go Together </p>
+                <div class="price">Minimum Bid Price</div>
+                <div class="price">35,000 </div>
+                <a class="btn" id="cola">Join Bidding</a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="image-container">
+                <div class="small-image">
+                    <img src="27.jpg" class="featured-image-5" alt="">
+                    <img src="29.jpg" class="featured-image-5" alt="">
+                    <img src="30.jpg" class="featured-image-5" alt="">
+                </div>
+                <div class="big-image">
+                    <img src="28.jpg" class="big-image-5" alt="">
+                </div>
+            </div>
+    
+        <div class="content">
+            <h3>European Victorian Chair</h3>
+            <p>Made of Aluminum and  Metal <br>This stunning bench has a victorian style with a faux cane seat 52" wide overall 15.5" height to the seat area 32" tall middle area overall 26" depth</p>
+            <div class="price">Minimum Bid Price</div>
+            <div class="price">10,000 </div>
+            <a class="btn" id="chair">Join Bidding</a>
+        </div>
+    </div>
+    <div class="row">
+        <div class="image-container">
+            <div class="small-image">
+                <img src="33.jpg" class="featured-image-6" alt="">
+                <img src="34.jpg" class="featured-image-6" alt="">
+                <img src="35.jpg" class="featured-image-6" alt="">
+                <img src="36.jpg" class="featured-image-6" alt="">
+            </div>
+            <div class="big-image">
+                <img src="37.jpg" class="big-image-6" alt="">
+            </div>
+        </div>
+    
+    <div class="content">
+        <h3>Denemonyo Table</h3>
+    
+        <p>Made of Solid Narra 1890's<br> H: 39” x L: 60” x W: 27 1/2” (99 cm x 152 cm x 70 cm)</p>
+        <div class="price">Minimum Bid Price</div>
+        <div class="price">50,000 </div>
+        <a class="btn" id="denemonyo">Join Bidding</a>
+    </div>
+    </div>
+</div>
+    
+    
+    </section>
+    
+    <script src="script.js"></script>
+
+</body>
+</html>
