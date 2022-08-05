@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+   <title> Login and Registration</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Fontawesome CDN Link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="4258404.png" rel="icon">
+   </head>
+
+<body>
+  
+<section class="header"> 
+
+  <a href="#" class="logo"> <image src ="4258404.png"> <i>"antique is anything old with class"</i> </image</a>
+ 
+  <nav class="navbar">
+    <a href="../index.html">home</a>
+    <a href="account.html">Account</a>
+    <a href="../Product UI/Product.html">Products</a>
+    <a href="../Auction/auction.html">Auction</a>
+    <a href="../Contact Form/inquiry.html">Inquiry</a>
+    </nav>
+ 
+    <div id="menu-btn" class="fas fa-bars"></div>
+ 
+</section>
+ 
+ <!-- header section ends    -->
+ 
+ <!-- custom js file link  -->
+ 
+
+<div class="flex-container">
+  <div class="container">
+    <input type="checkbox" id="flip-animation">
+    <div class="cover">
+      <div class="front">
+
+        <img src="cover.jpg" alt="">-->
+        <div class="text">
+          <span class="text-1">Something can be old, but it can be timeless; therefore, <br>  it becomes an antique.</span>
+          <span class="text-2">- CeeLo Green</span>
+        </div>
+      </div>
+      <div class="back">
+        <img class="backImg" src="f.jpg" alt="">-->
+        <div class="text">
+          <span class="text-1">A house with old furniture has no need of <br>ghosts to be haunted. </span>
+          <span class="text-2">- Hope Mirrlees</span>
+        </div>
+      </div>
+    </div>
+    <div class="forms">
+        <div class="form-content">
+          <div class="login-form">
+            <div class="title">Login</div>
+          <form action="#">
+            <div class="input-boxes">
+              <div class="input-box">
+                <i class="fas fa-envelope"></i>
+                <input type="text" placeholder="Enter your email" required>
+              </div>
+              <div class="input-box">
+                <i class="fas fa-lock"></i>
+                <input type="password" placeholder="Enter your password" required>
+              </div>
+              <div class="input-box">
+                <select id="list" onchange="getselectValue();">
+                  <option>USER</option>
+                  <option value="admin">ADMIN</option>
+                </select>
+              </div>
+              <div class="text"><a href="#">Forgot password?</a></div>
+              <div class="button input-box" id="user">
+                <input type="submit" value="Log In as User">
+              </div>
+              <div id="admin">
+              <div class="button input-box">
+                <input type="button" value="Log In as Admin" onclick="location.href ='../Admin Page/Admin.html'">
+              </div>
+            </div>
+              <div class="text sign-up-text">Don't have an account? <label for="flip-animation">Signup now</label></div>
+            </div>
+        </form>
+      </div>
+        <div class="signup-form">
+          <div class="title">Signup</div>
+        <form action="#">
+            <div class="input-boxes">
+              <div class="input-box">
+                <i class="fas fa-user"></i>
+                <input type="text" placeholder="Enter your name" required>
+              </div>
+              <div class="input-box">
+                <i class="fas fa-envelope"></i>
+                <input type="text" placeholder="Enter your email" required>
+              </div>
+              <div class="input-box">
+                <i class="fas fa-lock"></i>
+                <input type="password" placeholder="Enter your password" required>
+              </div>
+              <div class="button input-box">
+                <input type="submit" value="Submit">
+              </div>
+              <div class="text sign-up-text">Already have an account? <label for="flip-animation">Login now</label></div>
+            </div>
+      </form>
+    </div>
+    </div>
+    </div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
