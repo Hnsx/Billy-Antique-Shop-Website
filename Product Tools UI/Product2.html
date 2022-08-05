@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product UI</title>
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&display=swap" rel="stylesheet">
+    <link href="4258404.png" rel="icon">
+  
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="stylesheet.css">
+
+</head>
+<body>
+ 
+<section class="header"> 
+
+        <a href="#" class="logo"> <image src ="4258404.png"> <i>"antique is anything old with class"</i> </image</a>
+     
+        <nav class="navbar">
+          <a href="../Homepage2/admin.html">home</a>
+          <a href="../Admin Page2/accadmin.html">Account</a>
+          <a href="../Product UI2/Product2.html">Products</a>
+          <a href="../Auction2/auction2.html">Auction</a>
+          <a href="../Contact Form2/inquiry2.html">Inquiry</a>
+        </nav>
+     
+        <div id="menu-btn" class="fas fa-bars"></div>
+     
+</section>
+
+
+<section class="products" id="products">
+
+    <h1 class="heading"><span>products</span> </h1>
+
+    <div class="box-container">
+
+        <div class="box">
+
+            <image src="ref.jpg">
+            <div class="content">
+                <h3>Ice Boxes</h3>
+                <h2>Antique Ice Boxes Is Made Of Solid Narra Wood Since 1830'S</h2>
+                <div class="price">₱40,000 <span>₱45,000</span></div>
+                <a class="btn checkout">Check</a>
+            </div>
+        </div>
+
+        <div class="box">
+
+            <img src="Round table.jpg" alt="">
+            <div class="content">
+                <h3>Round Pedestal table</h3>
+                <h2>English Regency Round Table With Carved Center Pedestal, Circa 1925</h2>
+                <div class="price">₱30,000</div>
+                <a class="btn checkout">Check</a>
+            </div>
+        </div>
+
+        <div class="box">
+
+            <img src="Singer Stand.jpg" alt="">
+            <div class="content">
+                <h3>Singer Stand</h3>
+                <h2>Made Of Solid Iron (Pundido) 1950'S</h2>
+                <div class="price">₱4,000</div>
+                <a class="btn checkout">Check</a>
+            </div>
+        </div>
+     
+   <div class="box">
+
+            <img src="Coca cola.jpg" alt="">
+            <div class="content">
+                <h3>Coca-cola </h3>
+                <h2>COCA - COLA McDONALD Bottle 20the Anniversary,
+                  We Go Together</h2>
+                <div class="price">₱35,000</div>
+                <a class="btn checkout">Check</a>
+            </div>
+        </div>
+
+        <div class="box">
+
+            <img src="Victorian Style.jpg" alt="">
+            <div class="content">
+                <h3>European Victorian Chair</h3>
+                <h2>Made Of Aluminum And Metal
+                   Victorian Style With A Faux Cane Seat 52" Wide Overall 15.5"</h2>
+                <div class="price">₱10,000</div>
+                <a class="btn checkout">Check</a>
+            </div>
+        </div>
+
+        <div class="box">
+
+            <img src="denemonyo.jpg" alt="">
+            <div class="content">
+                <h3>Denemonyo Table</h3>
+                <h2>Made Of Solid Narra 1890'S
+                  H: 39” X L: 60” X W: 27 1/2” (99 Cm X 152 Cm X 70 Cm)</h2>
+                <div class="price">₱50,000 <span>₱60,000</span></div>
+                <a class="btn checkout">Check</a>
+            </div>
+        </div>
+
+    </div>
+
+</section> 
+
+<!--MODAL FOR ICE BOX PRODUCT-->
+<div id="myModal" class="modal">
+    <div class="modal-content">
+      <div class="modal-header">
+        <span class="close">&times;</span>
+        <h2>EDIT THE ITEM INFO</h2>
+      </div>
+      <div class="modal-body">
+        <div class="img-wrap">
+            <div class="form-container">
+        <label for="fullname">Item Name: </label>
+        <br>
+        <input type="text" id="fullname" placeholder="Product Name" required> &nbsp; &nbsp;
+        <br><br>
+
+        <label for="phone">Product Description: </label><br>
+        <textarea name="phone" id="phone" cols="40" rows="10"></textarea>
+        <br><br>
+        
+        <label for="email">Update/Add Photo</label><br>
+        <input type="file" id="email">
+        <br><br>
+
+        <label for="delivery">Product Price</label><br>
+        <input type="text" id="delivery" placeholder="Product Price">
+        <br><br>
+
+        <button type="button" class="btn order">Update</button>
+        <br><br>
+        <h3 class="textConfirm"><i class="fas fa-check-circle"></i>Product has been updated</h3>
+    </div>
+        <div class="form-container">
+        <img src="ref.jpg">
+        <h2>Product Price: ₱40,000</h2>
+        <h3>Shipping Fee: ₱250</h3>
+        </div>
+    </div>
+      </div>
+      <div class="modal-footer">
+        <h3>Reminder: Always put proper pricing</h3>
+      </div>
+    </div>
+  
+  </div>
+
+
+  <!--MODAL FOR ROUND TABLE PRODUCT-->
+  <div id="tableModal" class="modal">
+
+
+    <div class="modal-content">
+      <div class="modal-header">
+        <span class="close">&times;</span>
+        <h2>EDIT THE ITEM INFO</h2>
+      </div>
+      <div class="modal-body">
+        <div class="img-wrap">
+            <div class="form-container">
+        <label for="fullname">Item Name: </label>
+        <br>
+        <input type="text" id="fullname" placeholder="Product Name" readonly> &nbsp; &nbsp;
+        <br><br>
+
+        <label for="phone">Product Description: </label><br>
+        <textarea name="phone" id="phone" cols="40" rows="10"></textarea>
+        <br><br>
+        
+        <label for="email">Update/Add Photo</label><br>
+        <input type="file" id="email">
+        <br><br>
+        <label for="delivery">Product Price</label><br>
+        <input type="text" id="delivery" placeholder="Product Price">
+        <br><br>
+
+        <button type="button" class="btn order">Update</button>
+        <br><br>
+        <h3 class="textConfirm"><i class="fas fa-check-circle"></i>Product has been updated</h3>
+    </div>
+        <div class="form-container">
+        <img src="5.jpg">
+        <h2>Product Price: ₱30,000</h2>
+        <h3>Shipping Fee: ₱200</h3>
+        </div>
+    </div>
+      </div>
+      <div class="modal-footer">
+        <h3>Reminder: Always put proper pricing of the products</h3>
+      </div>
+    </div>
+  
+  </div>
+  
+<!-- custom js file link  -->
+<script src="script.js"></script>
+    
+</body>
+</html>
