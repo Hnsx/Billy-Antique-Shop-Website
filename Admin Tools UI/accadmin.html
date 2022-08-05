@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <link href="style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="4258404.png" rel="icon">
+</head>
+
+<body>
+    <div class="side-menu">
+        <div class="brand-name">
+        <img src="4258404.png"><h1>Bill's Antique</h1>
+        </div>
+        <ul>
+            <li class="active"><img src="monitor.png" alt="">&nbsp; <span>Dashboard</span> </li>
+            <li><img src="payment-method.png" alt="">&nbsp;<span>Payments</span> </li>
+            <li><img src="cargo.png" alt="">&nbsp;<span>Orders</span> </li>
+            <li><img src="bid.png" alt="">&nbsp;<span>Auction</span> </li>
+            <li><img src="social-media.png" alt="">&nbsp;<span>Product Engagement</span> </li>
+        </ul>
+    </div>
+    <div class="container">
+        <div class="header">
+            <div class="nav">
+                <div class="user">
+                    <h1><!--empty for layout--> </h1>
+                    <h1><!--empty for layout--> </h1>
+                    <div class="img-case">
+                    <a href="../Homepage2/admin.html"><img src="left-arrow.png"><h4>Go back to Homepage</h4></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="content">
+            <div class="cards">
+                <div class="card">
+                    <div class="box">
+                        <h1>456</h1>
+                        <h3>New Orders</h3>
+                    </div>
+                    <div class="icon-case">
+                    <i class="fas fa-dolly"></i>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="box">
+                        <h1>10</h1>
+                        <h3>New Auctioned</h3>
+                        <h3>Item</h3>
+                    </div>
+                    <div class="icon-case">
+                        <img src="auction.png" alt="">
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="box">
+                        <h1>36</h1>
+                        <h3>New Users</h3>
+                    </div>
+                    <div class="icon-case">
+                        <img src="user.png" alt="">
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="box">
+                        <h1>12</h1>
+                        <h3>Recent Payments</h3>
+                    </div>
+                    <div class="icon-case">
+                        <img src="debit-card.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="content-2">
+                <div class="recent-payments">
+                    <div class="title">
+                        <h2>New Orders</h2>
+                    </div>
+                    <table>
+                        <tr>
+                            <th>Name</th>
+                            <th>Item ID</th>
+                            <th>Amount</th>
+                            <th>More Info</th>
+                        </tr>
+                        <tr>
+                            <td>Mark Carandang</td>
+                            <td>0000031</td>
+                            <td>₱ 30,000</td>
+                            <td><a href="#" class="btn" id="modalBtn1">View</a></td>
+                        </tr>
+                        <tr>
+                            <td>Ken Benipayo</td>
+                            <td>0000121</td>
+                            <td>₱ 12,300</td>
+                            <td><a href="#" class="btn" id="modalBtn2">View</a></td>
+                        </tr>
+                        <tr>
+                            <td>Stephany Borjal</td>
+                            <td>0000331</td>
+                            <td>₱ 5,000</td>
+                            <td><a href="#" class="btn" id="modalBtn3">View</a></td>
+                        </tr>
+                        <tr>
+                            <td>Kurt Bongabong</td>
+                            <td>0000666</td>
+                            <td>₱ 60,000</td>
+                            <td><a href="#" class="btn" id="modalBtn4">View</a></td>
+                        </tr>
+                        <tr>
+                    </table>
+                </div>
+                <div class="new-students">
+                    <div class="title">
+                        <h2>New Auctioned Item</h2>
+                    </div>
+                    <table>
+                        <tr>
+                            <th>ID</th>
+                            <th>Name</th>
+                            <th>More Info</th>
+                        </tr>
+                        <tr>
+                            <td>00001</td>
+                            <td>Ice Boxes</td>
+                            <td><a href="#" class="btn" id="auctBtn1">View</a></td>
+                        </tr>
+                        <tr>
+                            <td>00002</td>
+                            <td>Round Pedestal Table</td>
+                            <td><a href="#" class="btn" id="auctBtn2">View</a></td>
+                        </tr>
+                        <tr>
+                            <td>00003</td>
+                            <td>Singer Stand</td>
+                            <td><a href="#" class="btn" id="auctBtn3">View</a></td>
+                        </tr>
+                        <tr>
+                            <td>00004</td>
+                            <td>Coca Cola</td>
+                            <td><a href="#" class="btn" id="auctBtn4">View</a></td>
+                        </tr>
+
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+            <!-- First Order Modal -->
+        <div id="myModal" class="modal">
+
+                    <div class="modal-content">
+                    <div class="modal-header">
+                        <span class="close">&times;</span>
+                        <h2>ORDER ID: 00001</h2>
+                    </div>
+                    <div class="modal-body">
+                        <p>Name: Mark Carandang</p>
+                        <p>Item ID: 0000031</p>
+                        <p>Item Name: Denemonyo Table</p>
+                        <p>Quantity: 1</p>
+                        <p>Amount: ₱ 30,000</p>
+                        <p>Payment Option: Cash On Delivery</p>
+                        <p>Staus: Pending for Approval</p>
+                        <p>Stock(s): 1</p>
+                        <p>Contact No: 09345678901</p>
+                        <br>
+                        <button type="button">ACCEPT ORDER</button>&nbsp; &nbsp;
+                        <button type="button">CONTACT CUSTOMER</button>
+                </div>
+    </div>       
+</div>
+
+
+        <!-- Second Order Modal -->
+        <div id="KenModal" class="modal">
+
+            <div class="modal-content">
+            <div class="modal-header">
+                <span class="close">&times;</span>
+                <h2>ORDER ID: 00002</h2>
+            </div>
+            <div class="modal-body">
+                <p>Name: Ken Benipayo</p>
+                <p>Item ID: 00000121</p>
+                <p>Item Name: Singer Stand</p>
+                <p>Quantity: 2</p>
+                <p>Amount: ₱ 24,600</p>
+                <p>Payment Option: Paypal</p>
+                <p>Paypal Accout: Ken21</p>
+                <p>Staus: Pending for Approval</p>
+                <p>Stock(s): 1</p>
+                <p>Contact No: 09999999999</p>
+                <br>
+                <button type="button">ACCEPT ORDER</button>&nbsp; &nbsp;
+                <button type="button">CONTACT CUSTOMER</button>
+        </div>
+</div>       
+</div>
+
+            <!-- Third Order Modal -->
+            <div id="StephModal" class="modal">
+
+                <div class="modal-content">
+                <div class="modal-header">
+                    <span class="close">&times;</span>
+                    <h2>ORDER ID: 00003</h2>
+                </div>
+                <div class="modal-body">
+                    <p>Name: Stephany Borjal</p>
+                    <p>Item ID: 00000331</p>
+                    <p>Item Name: Victorian Chair</p>
+                    <p>Quantity: 4</p>
+                    <p>Amount: ₱ 20,000</p>
+                    <p>Payment Option: Credit Card (BDO)</p>
+                    <p>Accouut No: 12345678910</p>
+                    <p>Staus: Approved</p>
+                    <p>Transaction No: 65432168746</p>
+                    <p>Stock(s): 1</p>
+                    <p>Contact No: 09999999999</p>
+                    <br>
+                    <button type="button">CONTACT CUSTOMER</button>
+                </div>
+        </div>       
+        </div>
+
+
+            <!-- Fourth Order Modal -->
+            <div id="KurtModal" class="modal">
+
+                <div class="modal-content">
+                <div class="modal-header">
+                    <span class="close">&times;</span>
+                    <h2>ORDER ID: 00004</h2>
+                </div>
+                <div class="modal-body">
+                    <p>Name: Kurt Bongabong</p>
+                    <p>Item ID: 00000666</p>
+                    <p>Item Name: Puyat Aparador</p>
+                    <p>Quantity: 1</p>
+                    <p>Amount: ₱ 60,000</p>
+                    <p>Payment Option: Cash on Delivery</p>
+                    <p>Staus: Approved</p>
+                    <p>Transaction No: 7310928334</p>
+                    <p>Stock(s): 1</p>
+                    <p>Contact No: 09999999999</p>
+                    <br>
+                    <button type="button">CONTACT CUSTOMER</button>
+                </div>
+        </div>       
+        </div>
+
+                    <!-- Auctioned item Modal 1 -->
+                    <div id="IceboxModal" class="modal">
+
+                        <div class="modal-content">
+                        <div class="modal-header">
+                            <span class="close">&times;</span>
+                            <h2>ID: 00001</h2>
+                        </div>
+                        <div class="modal-body">
+                            <p>Item Name: Ice Boxes</p>
+                            <p>Quantity: 1</p>
+                            <p>Minimum Bid Price: ₱ 40,000</p>
+                            <p>Maximum Bid Price: ₱ 90,000</p>
+                            <p>Auctioned Entry Fee: ₱ 10,000</p>
+                            <p>Staus: Currently in Auctioned</p>
+                            <p>Stock(s): 1</p>
+                            <h2>Highest Bidder: Cecilia Alvaran</h2>
+                            <p>Bid Price: ₱ 53,000</p>
+                            <br>
+                            <button type="button">FINISH AUCTION (Early)</button>
+                        </div>
+                </div>       
+                </div>
+
+                    <!-- Auctioned item Modal 2 -->
+                    <div id="TableModal" class="modal">
+
+                        <div class="modal-content">
+                        <div class="modal-header">
+                            <span class="close">&times;</span>
+                            <h2>ID: 00002</h2>
+                        </div>
+                        <div class="modal-body">
+                            <p>Item Name: Round Pedestal Table</p>
+                            <p>Quantity: 1</p>
+                            <p>Minimum Bid Price: ₱ 30,000</p>
+                            <p>Maximum Bid Price: ₱ 70,000</p>
+                            <p>Auctioned Entry Fee: ₱ 5,000</p>
+                            <p>Staus: Done</p>
+                            <p>Stock(s): 1</p>
+                            <h2>Highest Bidder: Noel Digma</h2>
+                            <p>Bid Price: ₱ 59,000</p>
+                            <br>
+                            <button type="button">Process Item</button>
+                        </div>
+                </div>       
+                </div>
+
+                    <!-- Auctioned item Modal 3 -->
+                    <div id="SingerModal" class="modal">
+
+                        <div class="modal-content">
+                        <div class="modal-header">
+                            <span class="close">&times;</span>
+                            <h2>ID: 00001</h2>
+                        </div>
+                        <div class="modal-body">
+                            <p>Item Name: Singer Stand</p>
+                            <p>Quantity: 1</p>
+                            <p>Minimum Bid Price: ₱ 4,000</p>
+                            <p>Maximum Bid Price: ₱ 15,000</p>
+                            <p>Auctioned Entry Fee: ₱ 1,000</p>
+                            <p>Staus: Currently in Auctioned</p>
+                            <p>Stock(s): 1</p>
+                            <h2>Highest Bidder: Hans Apdujan</h2>
+                            <p>Bid Price: ₱ 2,300</p>
+                            <br>
+                            <button type="button">FINISH AUCTION (Early)</button>
+                        </div>
+                </div>       
+            </div>
+
+                    <!-- Auctioned item Modal 4 -->
+                    <div id="ColaModal" class="modal">
+
+                        <div class="modal-content">
+                        <div class="modal-header">
+                            <span class="close">&times;</span>
+                            <h2>ID: 00001</h2>
+                        </div>
+                        <div class="modal-body">
+                            <p>Item Name: Coca Cola</p>
+                            <p>Quantity: 1</p>
+                            <p>Minimum Bid Price: ₱ 35,000</p>
+                            <p>Maximum Bid Price: ₱ 50,000</p>
+                            <p>Auctioned Entry Fee: ₱ 15,000</p>
+                            <p>Staus: Done</p>
+                            <p>Stock(s): 1</p>
+                            <h2>Highest Bidder: Christian Flores</h2>
+                            <p>Bid Price: ₱ 43,000</p>
+                            <br>
+                            <button type="button">Process Item</button>
+                        </div>
+                </div>       
+                </div>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
